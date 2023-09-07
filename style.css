@@ -56,7 +56,7 @@ body {
   flex-direction: row;
   font-size: 14px;
   justify-content: space-between;
-  border: 1px solid;
+  border: 2px solid rgb(76, 177, 226);
   margin-top: 45px;
   padding: 12px;
   letter-spacing: 1px;
@@ -74,6 +74,7 @@ a {
 .github_link a {
   text-decoration: none;
   font-style: italic;
+  font-size: 16px;
 }
 
 .github_link a:hover {
@@ -81,6 +82,100 @@ a {
   text-decoration: underline;
 }
 
-.weekday {
-  margin-bottom: 16px;
+@media (min-width: 2500px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+  .hello {
+    top: 10%;
+  }
+
+  .myImage {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .myImage img {
+    max-width: 50%;
+  }
+
+  .details {
+    margin-top: 0;
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .displayName {
+    font-size: 18px;
+    display: grid;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .other_info {
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: center;
+    margin-top: 35px;
+    padding: 12px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .left {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 430px) {
+  .hello {
+    top: 10%;
+  }
+
+  .myImage {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .myImage img {
+    max-width: 50%;
+  }
+
+  .details {
+    margin-top: 0;
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .displayName {
+    font-size: 18px;
+    display: grid;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .other_info {
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: center;
+    margin-top: 35px;
+    padding: 12px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .left {
+    margin-bottom: 15px;
+  }
 }
