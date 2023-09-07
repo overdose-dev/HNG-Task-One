@@ -130,15 +130,15 @@ a {
   }
 
   .myImage {
+    flex-direction: column;
     align-items: center;
   }
 
   .myImage img {
-    max-width: 50%;
+    max-width: 25%;
   }
 
   .details {
-    margin-top: -18px;
     display: block;
     margin-left: 30px;
     text-align: center;
@@ -147,6 +147,7 @@ a {
   .displayName {
     font-size: 18px;
     display: grid;
+    margin-top: 35px;
   }
 
   .other_info {
