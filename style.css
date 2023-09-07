@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+}
+
+body {
+  background-image: url(images/IMG_6481.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  background-color: rgba(38, 39, 85, 0.85);
+  color: white;
+}
+
+.hello {
+  position: absolute;
+  color: rgb(76, 177, 226);
+  font-weight: bold;
+  top: 20%;
+  /* left: 10%; */
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.myImage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.myImage img {
+  max-width: 30%;
+  height: 70%;
+}
+
+.details {
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+.other_info {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  justify-content: space-between;
+  border: 1px solid;
+  margin-top: 45px;
+  padding: 12px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: bold;
+}
+
+.left span,
+.right span,
+a {
+  color: white;
+  font-weight: 100;
+}
+
+.github_link a {
+  text-decoration: none;
+  font-style: italic;
+}
+
+.github_link a:hover {
+  color: rgb(76, 177, 226);
+  text-decoration: underline;
+}
+
+.weekday {
+  margin-bottom: 16px;
+}
