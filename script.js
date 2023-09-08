@@ -17,12 +17,10 @@ function updateClock() {
   const hours = currentDate.getUTCHours().toString().padStart(2, "0");
   const minutes = currentDate.getUTCMinutes().toString().padStart(2, "0");
   const seconds = currentDate.getUTCSeconds().toString().padStart(2, "0");
-  const milliseconds = currentDate.getUTCMilliseconds();
-
-  const currentTimeAndDay = `Current UTC Time: ${hours}:${minutes}:${seconds}.${milliseconds}, Day of the Week: ${dayName}`;
+  const milliseconds = currentDate.getTime();
 
   weekDayElement.innerHTML = dayName;
-  timeElement.innerHTML = `${hours}:${minutes}:${seconds}`;
+  timeElement.innerHTML = `${hours}:${minutes}:${seconds}.${milliseconds}`;
 }
 
 setInterval(updateClock, 1000);
