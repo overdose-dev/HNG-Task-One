@@ -28,7 +28,6 @@ body {
   color: rgb(76, 177, 226);
   font-weight: bold;
   top: 20%;
-  /* left: 10%; */
   font-size: 40px;
   display: flex;
   flex-direction: row;
