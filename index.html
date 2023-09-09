@@ -11,11 +11,14 @@
       <div class="overlay">
         <div class="hello">
           <div class="myImage">
-            <img
-              src="https://ca.slack-edge.com/T05FFAA91JP-U05R6C43PPF-daf9d2bb2c2b-512"
-              alt="Chinazaekpere Uchenna"
-              data-testid="slackDisplayImage"
-            />
+            <div class="imageDiv">
+              <img
+                src="https://ca.slack-edge.com/T05FFAA91JP-U05R6C43PPF-daf9d2bb2c2b-512"
+                alt="Chinazaekpere Uchenna"
+                data-testid="slackDisplayImage"
+              />
+              <p>Slack Display Picture</p>
+            </div>
             <div class="details">
               <span class="displayName">
                 Hi, I'm <br />
@@ -31,25 +34,36 @@
                     Slack Name: <span>Chinazaekpere Uchenna</span>
                   </p>
                   <p class="weekday" data-testid="currentDayOfTheWeek">
-                    Day of The Week: <span id="main_weekday"></span>
+                    Current Day of The Week: <span id="main_weekday"></span>
+                  </p>
+                  <p
+                    class="UTC_Time"
+                    data-testid="currentUTCTime"
+                    style="padding-top: 14px"
+                  >
+                    Current UTC Time (ms):
+                    <span id="currentUTCTime"></span>
                   </p>
                 </span>
                 <span class="right">
                   <p style="margin-bottom: 16px" data-testid="myTrack">
                     Track: <span>Frontend</span>
                   </p>
-                  <p class="UTC_Time" data-testid="currentUTCTime">
-                    Time: <span id="mainUTCTime"></span>
+                  <p class="UTC_Time">Time: <span id="Time"></span></p>
+                  <p
+                    class="github_link"
+                    data-testid="githubURL"
+                    style="padding-top: 14px"
+                  >
+                    GitHub URL:
+                    <a
+                      href="https://github.com/overdose-dev/HNG-Task-One/tree/main"
+                      target="_blank"
+                      >Click here</a
+                    >
                   </p>
                 </span>
               </span>
-              <p class="github_link" data-testid="githubURL">
-                <a
-                  href="https://github.com/overdose-dev/HNG-Task-One/tree/main"
-                  target="_blank"
-                  >Click here to see Github repository</a
-                >
-              </p>
             </div>
           </div>
         </div>

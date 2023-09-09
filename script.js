@@ -1,6 +1,7 @@
 function updateClock() {
   var weekDayElement = document.getElementById("main_weekday");
-  var timeElement = document.getElementById("mainUTCTime");
+  var UTCtimeElement = document.getElementById("currentUTCTime");
+  var timeElement = document.getElementById("Time");
 
   const currentDate = new Date();
   const dayOfWeek = currentDate.getUTCDay();
@@ -20,7 +21,8 @@ function updateClock() {
   const milliseconds = currentDate.getTime();
 
   weekDayElement.innerHTML = dayName;
-  timeElement.innerHTML = `${hours}:${minutes}:${seconds}.${milliseconds}`;
+  UTCtimeElement.innerHTML = `${milliseconds}`;
+  timeElement.innerHTML = `${hours}:${minutes}:${seconds}`;
 }
 
 setInterval(updateClock, 1000);
