@@ -1,10 +1,9 @@
-function updateClock() {
-  var weekDayElement = document.getElementById("main_weekday");
-  var UTCtimeElement = document.getElementById("currentUTCTime");
+function currentDate() {
+  const currentDayText = document.getElementById("currentDayOfTheWeek");
+  const currentUTCTime = document.getElementById("currentUTCTime");
+  const date = new Date();
 
-  const currentDate = new Date();
-  const dayOfWeek = currentDate.getUTCDay();
-  const daysOfWeek = [
+  const daysOfTheWeek = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -13,13 +12,14 @@ function updateClock() {
     "Friday",
     "Saturday",
   ];
-  const dayName = daysOfWeek[dayOfWeek];
-  const milliseconds = currentDate.getTime();
+  const dayOfWeek = date.getDay();
+  const currentDay = daysOfTheWeek[dayOfWeek];
+  const milliseconds = date.getTime();
 
-  weekDayElement.innerHTML = dayName;
-  UTCtimeElement.innerHTML = `${milliseconds}`;
+  currentDayText.innerHTML = currentDay;
+  currentUTCTime.innerHTML = `${milliseconds}`;
 }
 
-setInterval(updateClock, 1000);
+setInterval(currentDate, 1000);
 
-updateClock();
+currentDate();
