@@ -195,13 +195,13 @@ a {
   }
 
   .imageDiv img {
-    max-width: 50%;
+    max-width: 100%;
+    margin-left: -35px;
   }
 
   .details {
-    margin-top: 0;
     display: block;
-    margin-left: 0;
+    margin-left: -105px;
     text-align: center;
   }
 
